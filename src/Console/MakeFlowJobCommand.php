@@ -23,8 +23,8 @@ class MakeFlowJobCommand extends Command
         $class = Str::studly($name);
 
         $filesystem = new Filesystem();
-        $jobsDir = 'app\\Jobs';
-        $namespace = 'app\\Jobs';
+        $jobsDir = 'app\Jobs';
+        $namespace = 'app\Jobs';
 
         if (!$filesystem->isDirectory($jobsDir)) {
             $filesystem->makeDirectory($jobsDir, 0755, true);
