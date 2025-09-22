@@ -1,0 +1,30 @@
+{
+  "name": "webtize/flows",
+  "description": "PHP Flows SDK for Laravel: models, migrations, and service helpers to log and track flows.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "illuminate/support": "^10.0|^11.0",
+    "illuminate/database": "^10.0|^11.0",
+    "illuminate/console": "^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webtize\\Flows\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Webtize\\Flows\\Providers\\FlowServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "j1g4r",
+      "email": "jigar@webtize.com.au"
+    }
+  ]
+}
