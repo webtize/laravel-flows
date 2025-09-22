@@ -96,9 +96,6 @@ class {{class}} implements ShouldQueue
 
             // Mark as error with message and stack trace
             FlowAPI::markError($this->flowId, $error);
-
-            // Re-throw so the queue worker can handle retries, etc.
-            throw $e;
         }
     }
 }
