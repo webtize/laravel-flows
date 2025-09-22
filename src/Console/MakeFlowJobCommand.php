@@ -40,12 +40,6 @@ class MakeFlowJobCommand extends Command
         $contents = $this->buildJobStub($namespace, $class);
         $filesystem->put($path, $contents);
 
-        $this->info("Flow Job created: {$namespace}\\{$class}");
-        $this->line($path);
-        $this->newLine();
-        $this->comment('Remember: dispatch the job with a valid Flow ID, e.g.');
-        $this->line("  {$namespace}\\{$class}::dispatch(")
-            ->line('      $flowId');
 
         return 0;
     }
