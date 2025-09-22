@@ -24,7 +24,7 @@ class MakeFlowJobCommand extends Command
 
         $filesystem = new Filesystem();
         $jobsDir = 'app\Jobs';
-        $namespace = 'app\Jobs';
+        $namespace = 'app\\Jobs';
 
         if (!$filesystem->isDirectory($jobsDir)) {
             $filesystem->makeDirectory($jobsDir, 0755, true);
